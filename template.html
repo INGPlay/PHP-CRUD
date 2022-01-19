@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="kor">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='template.css'>
-    <script src=''></script>
 </head>
 <body>
+    <?php
+        include("./uptag.php");
+    ?>
     <form action="./login.php" method="post">
-        id : <input type="text" name="id">
+        id : <input type="text" name="id">                                                          
         password : <input type="password" name="password">
-        <div class="areaText">
-            <textarea name="content" rows="30" cols="70"></textarea>
+        <div>
+            Title : <input type="text" name="title" class="titleArea">
+            <textarea name="content" class="areaText"></textarea>
         </div>
         <input type="submit">
     </form>

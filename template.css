@@ -1,3 +1,16 @@
+
+.titleArea {
+    width: 450px;
+}
+
 .areaText {
-    margin-top: 10px;
+    margin: 2px 2px;
+    display: block;
+    width: 500px;
+    height: 400px;
+}
+
+.link {
+    margin-left: 2px;
+    margin-right: 2px;
 }
