@@ -1,5 +1,5 @@
 <?php
-    include("config.php");
+    include("../config.php");
 
     $userId = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_STRING);
     $userPassword = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
@@ -25,5 +25,6 @@
     }
 
     mysqli_close($db);
+    exit();
     //db end
 ?>

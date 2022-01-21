@@ -8,5 +8,4 @@
 	header('Location: '.$uri.'/template.html');
 	exit;
 ?>
-Something is wrong with the XAMPP installation :-(
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <?php
+        include("./base/head.html");
+    ?>
+<body>
+    <?php
+        include("updatePage.php");
+    ?>
+
+    <form action="./crud/update.php" method="post">
+        <input type="hidden" name="id" value="<?php echo $index; ?>">
+        id : <input type="text" name="userId" value="<?php echo $db_userId; ?>">                                                          
+        password : <input type="text" name="userPassword" value="<?php echo $db_userPassword; ?>">
+        <div>
+            Title : <input type="text" name="title" class="titleArea" value="<?php echo $db_title; ?>">
+            <textarea name="content" class="areaText"><?php echo "{$db_content}"; ?></textarea>
+        </div>
+        <input type="submit">
+    </form>
+
+    <?php 
+        $db->close();
+    ?>
+</body>
+</html>

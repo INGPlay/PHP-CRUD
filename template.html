@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="kor">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='template.css'>
-</head>
+    <?php
+        include("./base/head.html");
+    ?>
 <body>
     <?php
-        include("./uptag.php");
+        include("./base/uptag.html");
     ?>
-    <form action="./login.php" method="post">
+    <form action="./crud/create.php" method="post">
         id : <input type="text" name="id">                                                          
         password : <input type="password" name="password">
         <div>

@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="kor">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='template.css'>
-</head>
+    <?php
+        include("./base/head.html");
+    ?>
 <body>
     <?php
-        include("./uptag.php");
+        include("./base/uptag.html");
+        include("./crud/read.php");
     ?>
     <div>
+        <table border=1>
+            <th>
+                <td>Id</td>
+                <td>password</td>
+                <td>title</td>
+                <td>content</td>
+            </th>
         <?php
-            include("./read.php");
+
+            while($row = $result->fetch_assoc()){
+                echo"
+                    <form method=\"\get\">
+                        <tr>
+                            <td>
+                                <input type=\"text\" name=\"index\" value=\"{$row["id"]}\" class=\"indexForm\" readonly>
+                            </td>
+                            <td>
+                                {$row["userId"]}
+                            </td>
+                            <td>
+                                {$row["userPassword"]}
+                            </td>
+                            <td>
+                                {$row["title"]}
+                            </td>
+                            <td>
+                                {$row["content"]}
+                            </td>
+                            <td>
+                                <input type=\"submit\" value=\"update\" formaction=\"./updatePage.html\">
+                            </td>
+                            <td>
+                                <input type=\"submit\" value=\"delete\" formaction=\"./deleteConfirm.html\">
+                            </td>
+                        </tr>
+                    </form>
+                ";
+            }
+        ?>
+        </table>
+
+        <?php
+            $db->close();
+            //db end
         ?>
     </div>
 </body>
