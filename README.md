@@ -6,9 +6,9 @@
 
 ## crud : 삽입, 보기, 수정, 삭제 기능  
 ㄴcreate.php  
-ㄴread.php
-ㄴupdate.php
-ㄴdelete.php
+ㄴread.php  
+ㄴupdate.php  
+ㄴdelete.php  
 
 ## css : css
 ㄴtemplate.css  
