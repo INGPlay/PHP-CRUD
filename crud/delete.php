@@ -8,6 +8,8 @@
         $db_index = $_GET["index"];
         $stmt->execute(array($db_index));
 
+        $db->close();
+
         header("Location:/thread.html");
     }
 ?>
