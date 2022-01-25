@@ -17,10 +17,10 @@
 ㄴphpinfo.php  
 
 ## / : html 등 프론트  
-ㄴindex.php : 기본페이지(thread.html) 
+ㄴindex.php : 기본페이지(thread.html)  
 ㄴconfig.php : mariaDb 설정  
 ㄴthread.html : 읽기(read.php)  
 ㄴtemplate.html : 쓰기(read.php)  
-ㄴupdatePage.html : 수정(update.php)
+ㄴupdatePage.html : 수정(update.php)  
 ㄴupdatePage.php  : 수정할 내용을 SQL에서 가져옴  
-ㄴdeleteConfirm.html : 삭제(delete.php)  
+ㄴdeleteConfirm.html : 삭제(delete.php)   
